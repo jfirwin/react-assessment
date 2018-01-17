@@ -9,7 +9,7 @@ function Item(props) {
       </div>
       <div>
         <button onClick={()=> props.remove(props.item.id)}>🗑</button>
-        <button disabled={!props.item.complete} onClick={() => props.complete(props.item.id)}>✅</button>
+        <button onClick={() => props.complete(props.item.id)}>✅</button>
       </div>
     </div>
   );
